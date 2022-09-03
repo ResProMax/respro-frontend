@@ -11,7 +11,6 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { createTheme } from "@mui/material/styles";
 
@@ -39,9 +38,9 @@ function Navbar(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
+      <h1 variant="h6" sx={{ my: 2 }}>
         Logo
-      </Typography>
+      </h1>
       <Divider />
       <List>
         {navItems.map((item) => (
@@ -72,13 +71,13 @@ function Navbar(props) {
           >
             <MenuIcon />
           </IconButton>
-          {/* <Typography
+          {/* <h1
             variant="h6"
             component="div"
             sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
           >
             MUI
-          </Typography> */}
+          </h1> */}
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (
               <Button key={item} sx={{ color: "#fff" }}>

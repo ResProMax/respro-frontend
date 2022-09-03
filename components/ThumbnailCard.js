@@ -1,4 +1,3 @@
-import { Typography } from "@mui/material";
 
 const ThumbnailCard = ({ id, title, subTitle, card, active, setActive }) => {
   const onClick = () => {
@@ -17,8 +16,8 @@ const ThumbnailCard = ({ id, title, subTitle, card, active, setActive }) => {
       id={id}
     >
       <div className="p-3">
-        <Typography className="text-2xl">{title}</Typography>
-        <Typography>{subTitle}</Typography>
+        <h1 className="text-2xl">{title}</h1>
+        <h1>{subTitle}</h1>
       </div>
     </div>
   );

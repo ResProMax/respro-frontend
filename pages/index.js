@@ -2,7 +2,6 @@
 // import Image from "next/image";
 // import styles from "../styles/Home.module.css";
 import { useState } from "react";
-import { Typography } from "@mui/material";
 import Navbar from "../components/Navbar";
 import SearchFieldArea from "../components/SearchFieldArea";
 import ThumbnailCard from "../components/ThumbnailCard";
@@ -48,7 +47,7 @@ export default function Home({ data }) {
           ))}
         </div>
         <div className="w-8/12  bg-slate-600">
-          <Typography>{activeCard.title}</Typography>
+          <h1>{activeCard.title}</h1>
         </div>
       </div>
     </div>
